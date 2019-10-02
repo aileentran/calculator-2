@@ -54,6 +54,8 @@ while True:
         print(cube(num1))
     elif op == "pow":
         print(power(num1, num2))
+    elif op == "mod":
+        print(mod(num1, num2))
 
 
 

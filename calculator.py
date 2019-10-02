@@ -40,6 +40,8 @@ while True:
         print(subtract(num1, num2))
     elif op == "*":
         print(multiply(num1, num2))
+    elif op == "/":
+        print(divide(num1, num2))
 
 
 

@@ -50,6 +50,8 @@ while True:
         print(divide(num1, num2))
     elif op == "square":
         print(square(num1))
+    elif op == "cube":
+        print(cube(num1))
 
 
 

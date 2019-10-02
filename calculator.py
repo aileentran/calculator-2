@@ -52,6 +52,8 @@ while True:
         print(square(num1))
     elif op == "cube":
         print(cube(num1))
+    elif op == "pow":
+        print(power(num1, num2))
 
 
 

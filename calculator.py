@@ -31,14 +31,17 @@ while True:
     user_input = input("> ")
     tokens = user_input.split(" ") #[op, num1, num2 -maybe]
     op = tokens[0]
-    num1 = float(tokens[1])
     
-
-    if len(tokens) < 3:
-        num2 = None
-    else:
+    if len(tokens) == 3:
+        num1 = float(tokens[1])
         num2 = float(tokens[2])
-    # if tokens[2] does not exist, replace with num1
+    
+    elif len(tokens) == 1:
+        num1 = None
+
+    elif len(tokens) < 3:
+        num2 = None
+
 
     if op == "+":
         print(add(num1, num2))
@@ -56,6 +59,8 @@ while True:
         print(power(num1, num2))
     elif op == "mod":
         print(mod(num1, num2))
+    elif op == "q":
+        break
 
 
 
